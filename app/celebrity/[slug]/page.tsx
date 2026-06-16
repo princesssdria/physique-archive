@@ -119,7 +119,7 @@ export default async function CelebrityPage({ params }: CelebrityPageProps) {
           </div>
           <p className="mt-5 text-sm leading-6 text-white/66">
             These are inferred training themes from the era, role, sport, or performance style. They are not a claim
-            about the celebrity's exact private routine.
+            about the celebrity&apos;s exact private routine.
           </p>
         </div>
         <div className="glass rounded-2xl p-6">
