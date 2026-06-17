@@ -27,15 +27,17 @@ export function CelebrityCard({ celebrity, compact = false }: { celebrity: Celeb
   return (
     <article className="group overflow-hidden rounded-2xl border border-line bg-panel/72 shadow-glow transition duration-300 hover:-translate-y-1 hover:border-champagne/40">
       <Link href={`/celebrity/${celebrity.slug}`} className="block">
-        <div className={compact ? "relative h-44" : "relative h-64"}>
-          <Image
-            src={celebrity.image}
-            alt={`${celebrity.name} inspired fitness visual`}
-            fill
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/24 to-transparent" />
+        <div className={compact ? "relative h-44 overflow-hidden" : "relative h-64 overflow-hidden"}>
+          <div className="absolute inset-0 transition duration-500 group-hover:scale-105">
+            <Image
+              src={celebrity.image}
+              alt={`${celebrity.name} inspired fitness visual`}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/60 to-transparent" />
+          </div>
           <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-3 py-1 text-xs text-white backdrop-blur">
             <Sparkles size={13} />
             Inspired by {celebrity.era}
