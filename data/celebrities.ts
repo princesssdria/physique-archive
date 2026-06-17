@@ -34,16 +34,6 @@ export type Celebrity = {
 
 // Replace any profile's `image` value with a direct URL or a local public path
 // such as "/celebrities/chris-evans-captain-america-era.jpg".
-const images = [
-  "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1100&q=80",
-  "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?auto=format&fit=crop&w=1100&q=80"
-];
 
 const defaultDisclaimer =
   "This profile is inspiration-based fitness guidance. Genetics, history, coaching, recovery, access, and personal health all matter, so exact replication is unrealistic and not the goal.";
@@ -305,7 +295,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "legs", "glutes"],
     trainingStyle: ["dance conditioning", "core work", "stage endurance"],
     searchKeywords: ["tiny waist illusion", "dancer body", "slim toned", "pop choreography"],
-    image: images[0],
+    image: "/images/beyonce-des-child.jpg",
     workoutPlan: plan("dance conditioning", "core and legs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A stage-ready, dance-forward profile with similar emphasis on rhythm, posture, core endurance, and toned lower body lines."
@@ -322,7 +312,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "quads", "abs"],
     trainingStyle: ["dance conditioning", "strength circuits", "mobility"],
     searchKeywords: ["curvy athletic", "glutes", "strong stage physique", "athletic feminine"],
-    image: images[1],
+    image: "/images/beyonce-renaissance.jpg",
     workoutPlan: plan("strength circuits", "glutes and quads"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A powerful performance-inspired focus with similar muscle emphasis through glutes, legs, core control, and stamina."
@@ -339,7 +329,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "quads", "hamstrings"],
     trainingStyle: ["lower body hypertrophy", "conditioning", "dance"],
     searchKeywords: ["thick legs", "slim thick", "glutes", "curvy athletic"],
-    image: images[2],
+    image: "/images/megan-thee-stallion.jpg",
     workoutPlan: plan("lower body hypertrophy", "glutes and hamstrings"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A lower-body dominant, performance-ready inspiration profile centered on glute strength, quad shape, and athletic conditioning."
@@ -356,7 +346,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "shoulders", "legs"],
     trainingStyle: ["Pilates", "bodyweight strength", "mobility"],
     searchKeywords: ["slim toned", "long lean", "pilates body", "dancer physique"],
-    image: images[3],
+    image: "/images/zendaya.jpg",
     workoutPlan: plan("Pilates", "core and posture"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A lean, polished inspiration profile with similar emphasis on posture, core control, shoulder line, and graceful movement."
@@ -373,7 +363,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "glutes", "calves"],
     trainingStyle: ["dance conditioning", "HIIT", "core circuits"],
     searchKeywords: ["dancer body", "slim toned", "athletic feminine", "abs"],
-    image: images[4],
+    image: "/images/tinashe.jpg",
     workoutPlan: plan("HIIT", "abs and calves"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A dance-athlete inspiration profile focused on explosive movement, visible core endurance, calves, and glute stability."
@@ -390,7 +380,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "chest", "arms", "abs"],
     trainingStyle: ["hypertrophy", "upper body split", "strength conditioning"],
     searchKeywords: ["superhero physique", "broad shoulders", "visible abs", "captain build"],
-    image: images[5],
+    image: "/images/chris-evans.jpg",
     workoutPlan: plan("hypertrophy", "shoulders and chest"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A classic superhero-inspired focus built around shoulder width, chest development, arm size, and athletic leanness."
@@ -407,7 +397,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "shoulders", "back", "arms"],
     trainingStyle: ["boxing conditioning", "hypertrophy", "athletic circuits"],
     searchKeywords: ["boxer body", "visible abs", "lean muscular", "athletic"],
-    image: images[6],
+    image: "/images/michael-b-jordan-creed.jpg",
     workoutPlan: plan("boxing conditioning", "abs and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A fighter-inspired profile with similar emphasis on leanness, core rotation, shoulder endurance, and upper-back athleticism."
@@ -424,7 +414,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "chest", "back"],
     trainingStyle: ["strength basics", "athletic conditioning", "hypertrophy"],
     searchKeywords: ["smallville build", "lean athletic", "broad shoulders"],
-    image: images[7],
+    image: "/images/tom-welling.jpg",
     workoutPlan: plan("strength basics", "shoulders and back"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A clean-cut athletic inspiration profile with a similar broad-shouldered, balanced upper-body focus."
@@ -441,7 +431,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["legs", "abs", "shoulders"],
     trainingStyle: ["Pilates", "light strength", "cardio conditioning"],
     searchKeywords: ["slim toned", "tv fit", "lean athletic", "tiny waist illusion"],
-    image: images[0],
+    image: "/images/erica-durance-smallville.jpg",
     workoutPlan: plan("Pilates", "legs and abs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A streamlined TV-era inspiration profile with similar focus on posture, toned legs, core control, and shoulder definition."
@@ -458,7 +448,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "chest", "arms", "back"],
     trainingStyle: ["bodybuilding split", "strength", "functional conditioning"],
     searchKeywords: ["thor build", "superhero physique", "arms", "broad shoulders"],
-    image: images[1],
+    image: "/images/chris-hemsworth.jpg",
     workoutPlan: plan("bodybuilding split", "back and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A high-muscle superhero inspiration profile with similar emphasis on upper-body size, back width, and power-oriented training."
@@ -475,7 +465,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "quads", "abs"],
     trainingStyle: ["dance conditioning", "lower body strength", "core"],
     searchKeywords: ["curvy athletic", "dancer body", "glutes", "stage legs"],
-    image: images[2],
+    image: "/images/jennifer-lopez-2000s.jpg",
     workoutPlan: plan("dance conditioning", "glutes and quads"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A dance-performance inspiration profile with similar emphasis on glutes, legs, core bracing, and polished stage stamina."
@@ -492,7 +482,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "legs", "calves"],
     trainingStyle: ["dance rehearsals", "core", "cardio conditioning"],
     searchKeywords: ["dancer body", "slim toned", "visible abs", "pop dancer"],
-    image: images[3],
+    image: "/images/britney-spears.jpg",
     workoutPlan: plan("dance rehearsals", "abs and calves"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A pop-dance inspiration profile focused on similar core visibility, leg endurance, and high-repetition performance conditioning."
@@ -509,7 +499,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "arms", "legs"],
     trainingStyle: ["dance conditioning", "strength circuits", "core"],
     searchKeywords: ["90s dancer", "defined abs", "lean athletic", "dancer body"],
-    image: images[4],
+    image: "/images/janet-jackson-90s.jpg",
     workoutPlan: plan("strength circuits", "abs and arms"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A precise dance-athlete profile with similar emphasis on defined core, arm tone, leg stamina, and choreography-ready conditioning."
@@ -526,7 +516,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "chest", "arms"],
     trainingStyle: ["calisthenics", "conditioning", "lean hypertrophy"],
     searchKeywords: ["lean athletic", "visible abs", "low bulk", "slim muscular"],
-    image: images[5],
+    image: "/images/brad-pitt-fight-club.jpg",
     workoutPlan: plan("calisthenics", "abs and chest"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A lean, low-bulk inspiration profile with similar emphasis on visible core, light chest definition, and athletic conditioning."
@@ -543,7 +533,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "arms", "abs", "calves"],
     trainingStyle: ["boxing", "roadwork", "strength"],
     searchKeywords: ["boxer body", "athletic", "conditioning", "arms"],
-    image: images[6],
+    image: "/images/will-smith.jpg",
     workoutPlan: plan("boxing", "shoulders and abs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A boxing-inspired profile centered on similar shoulder endurance, core rotation, arm conditioning, and resilient athleticism."
@@ -560,7 +550,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "shoulders", "legs"],
     trainingStyle: ["martial conditioning", "strength circuits", "mobility"],
     searchKeywords: ["action fit", "slim toned", "lean athletic", "abs"],
-    image: images[7],
+    image: "/images/halle-berry-catwoman.jpg",
     workoutPlan: plan("martial conditioning", "abs and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "An action-role inspiration profile with similar focus on lean muscle, core definition, shoulder shape, and mobile strength."
@@ -577,7 +567,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "legs", "glutes"],
     trainingStyle: ["circuit training", "core", "swim conditioning"],
     searchKeywords: ["slim toned", "beach athletic", "core", "lean legs"],
-    image: images[0],
+    image: "/images/jessica-alba.jpg",
     workoutPlan: plan("circuit training", "abs and legs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A beach-athletic inspiration profile emphasizing similar core tone, glute stability, and full-body circuit conditioning."
@@ -594,7 +584,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["arms", "shoulders", "abs", "back"],
     trainingStyle: ["martial arts", "functional strength", "core"],
     searchKeywords: ["action fit", "strong arms", "lean athletic", "back"],
-    image: images[1],
+    image: "/images/angelina-jolie.jpg",
     workoutPlan: plan("functional strength", "arms and back"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "An action-adventure inspiration profile with similar emphasis on arms, shoulders, core control, and functional upper-back strength."
@@ -611,7 +601,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "legs", "abs"],
     trainingStyle: ["dance conditioning", "full-body strength", "mobility"],
     searchKeywords: ["slim thick", "curvy athletic", "stage body", "glutes"],
-    image: images[2],
+    image: "/images/rihanna.jpg",
     workoutPlan: plan("full-body strength", "glutes and legs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A stage-inspired profile with similar lower-body curves, core posture, and relaxed but athletic performance presence."
@@ -628,7 +618,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "legs", "glutes", "calves"],
     trainingStyle: ["dance conditioning", "Pilates", "HIIT"],
     searchKeywords: ["dancer body", "slim toned", "pilates", "stage legs"],
-    image: images[3],
+    image: "/images/dua-lipa.jpg",
     workoutPlan: plan("Pilates", "legs and core"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A modern pop-performance inspiration profile with similar focus on legs, core control, glute activation, and dance endurance."
@@ -645,7 +635,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "arms", "abs", "legs"],
     trainingStyle: ["martial conditioning", "strength circuits", "mobility"],
     searchKeywords: ["action fit", "athletic feminine", "strong shoulders", "lean athletic"],
-    image: images[4],
+    image: "/images/lupita-nyongo.jpg",
     workoutPlan: plan("martial conditioning", "shoulders and legs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "An action-fit inspiration profile with similar emphasis on shoulder strength, athletic legs, core control, and movement skill."
@@ -662,7 +652,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "quads", "shoulders", "arms"],
     trainingStyle: ["strength circuits", "martial conditioning", "mobility"],
     searchKeywords: ["action fit", "athletic feminine", "quads", "glutes"],
-    image: images[5],
+    image: "/images/scarlett-johansson.jpg",
     workoutPlan: plan("strength circuits", "quads and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "An action-role inspiration profile with similar emphasis on strong legs, shoulders, arms, and athletic movement quality."
@@ -679,7 +669,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["shoulders", "legs", "arms", "abs"],
     trainingStyle: ["functional strength", "martial conditioning", "mobility"],
     searchKeywords: ["female superhero", "lean athletic", "shoulders", "slim toned"],
-    image: images[6],
+    image: "/images/gal-gadot.jpg",
     workoutPlan: plan("functional strength", "shoulders and legs"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A lean superhero inspiration profile focused on similar shoulder line, leg strength, arm tone, and functional conditioning."
@@ -696,7 +686,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["chest", "shoulders", "arms", "back"],
     trainingStyle: ["bodybuilding split", "strength", "conditioning"],
     searchKeywords: ["superman build", "superhero physique", "chest", "broad shoulders"],
-    image: images[7],
+    image: "/images/henry-cavill.jpg",
     workoutPlan: plan("bodybuilding split", "chest and back"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A high-muscle superhero inspiration profile with similar focus on chest thickness, shoulder width, back size, and strength."
@@ -713,7 +703,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["back", "shoulders", "arms", "chest"],
     trainingStyle: ["functional strength", "climbing", "conditioning"],
     searchKeywords: ["rugged athletic", "broad shoulders", "back", "functional strong"],
-    image: images[0],
+    image: "/images/jason-momoa.jpg",
     workoutPlan: plan("functional strength", "back and arms"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A rugged action inspiration profile with similar emphasis on back width, shoulders, grip-heavy strength, and conditioning."
@@ -730,7 +720,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "chest", "arms", "shoulders"],
     trainingStyle: ["hypertrophy", "conditioning circuits", "core"],
     searchKeywords: ["visible abs", "beach athletic", "lean muscular", "shoulders"],
-    image: images[1],
+    image: "/images/zac-efron.jpg",
     workoutPlan: plan("conditioning circuits", "abs and chest"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A beach-athletic inspiration profile with similar emphasis on core visibility, chest definition, shoulders, and high work capacity."
@@ -747,7 +737,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["quads", "glutes", "shoulders", "arms"],
     trainingStyle: ["gymnastics conditioning", "power training", "mobility"],
     searchKeywords: ["power athletic", "muscular feminine", "strong legs", "shoulders"],
-    image: images[2],
+    image: "/images/simone-biles.jpg",
     workoutPlan: plan("power training", "quads and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A power-athlete inspiration profile with similar emphasis on explosive legs, strong shoulders, core stiffness, and mobility."
@@ -764,7 +754,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["glutes", "quads", "shoulders", "arms"],
     trainingStyle: ["sport conditioning", "strength", "power"],
     searchKeywords: ["power athletic", "strong legs", "athletic feminine", "glutes"],
-    image: images[3],
+    image: "/images/serena-williams.jpg",
     workoutPlan: plan("sport conditioning", "glutes and shoulders"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A power-sport inspiration profile with similar emphasis on strong lower body, shoulders, arms, and explosive conditioning."
@@ -781,7 +771,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "legs", "glutes"],
     trainingStyle: ["Pilates", "barre", "light strength"],
     searchKeywords: ["pilates body", "slim toned", "lean legs", "glutes"],
-    image: images[4],
+    image: "/images/margot-robbie.jpg",
     workoutPlan: plan("barre", "legs and glutes"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A polished, Pilates-inspired profile with similar emphasis on leg lines, core control, glute activation, and posture."
@@ -798,7 +788,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["quads", "glutes", "arms", "shoulders"],
     trainingStyle: ["strength circuits", "martial conditioning", "HIIT"],
     searchKeywords: ["action fit", "athletic feminine", "strong legs", "quads"],
-    image: images[5],
+    image: "/images/florence-pugh.jpg",
     workoutPlan: plan("HIIT", "quads and arms"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A grounded action-fit inspiration profile with similar emphasis on leg strength, shoulder tone, and practical conditioning."
@@ -815,7 +805,7 @@ export const celebrities: Celebrity[] = [
     muscleFocus: ["abs", "shoulders", "arms", "back"],
     trainingStyle: ["gymnastics conditioning", "calisthenics", "mobility"],
     searchKeywords: ["lean athletic", "spiderman build", "calisthenics", "abs"],
-    image: images[6],
+    image: "/images/tom-holland.jpg",
     workoutPlan: plan("calisthenics", "abs and back"),
     disclaimer: defaultDisclaimer,
     physiqueDescription: "A nimble superhero inspiration profile with similar focus on core control, shoulders, back, and bodyweight skill."
