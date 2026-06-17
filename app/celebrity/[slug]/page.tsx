@@ -27,12 +27,12 @@ function fuelingIdeas(muscleFocus: string[], trainingStyle: string[]) {
 
   return [
     lowerBody
-      ? "Protein-forward meals with carbs around lower-body sessions, such as eggs with toast, chicken and rice, tofu bowls, or Greek yogurt with fruit."
-      : "Protein-forward meals that support recovery, such as salmon or tofu with potatoes, turkey wraps, lentil bowls, or Greek yogurt with berries.",
+      ? `Protein-forward meals with carbs around lower-body sessions, such as eggs with toast, chicken and rice, tofu bowls, or Greek yogurt with fruit.`
+      : `Protein-forward meals that support recovery, such as salmon or tofu with potatoes, turkey wraps, lentil bowls, or Greek yogurt with berries.`,
     highOutput
-      ? "Hydrating snacks before performance work, such as a banana with peanut butter, oatmeal, fruit and yogurt, or a smoothie."
-      : "Steady energy meals with whole-food carbs, colorful produce, and healthy fats, such as rice bowls, pasta with lean protein, or avocado toast with eggs.",
-    "Post-workout recovery options: protein plus carbs within a comfortable window, plenty of fluids, and enough total food to support training quality."
+      ? `Hydrating snacks before performance work, such as a banana with peanut butter, oatmeal, fruit and yogurt, or a smoothie.`
+      : `Steady energy meals with whole-food carbs, colorful produce, and healthy fats, such as rice bowls, pasta with lean protein, or avocado toast with eggs.`,
+    `Post-workout recovery options: protein plus carbs within a comfortable window, plenty of fluids, and enough total food to support training quality.`
   ];
 }
 
